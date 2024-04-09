@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Quicksand, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100rem;
+    height: 70rem;
+    background-color: white(0, 255, 255, 0.212);
+    border-radius: 3rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    left: -30rem;
+    text-align: center;
+    color: white;
+    width: 30rem;
+    transition: left 0.8s;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.banner p {
+    font-size: 2rem;
+}
+
+.clean {
+    color: linear-gradient(to right, rgb(255, 6, 6), rgb(128, 3, 3));
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 6, 6), rgb(128, 3, 3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: width 1.5s cubic-bezier(.19, 1, .22, 1);
+}
+
+.signup-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16rem;
+    height: 5rem;
+    background-color: transparent;
+    border: .1rem solid lightblue;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-form {
+    width: 60rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 0;
+    transition: left 1.5s cubic-bezier(.19, 1, .22, 1);
+}
+
+.signup-form h1 {
+    font-size: 4rem;
+    color: rgb(187, 16, 16);
+}
+
+.signup-form p {
+    font-size: 1.8rem;
+    color: rgb(122, 137, 150);
+}
+
+.fab {
+    display: flex;
+}
+
+.fab i {
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    border: .1rem solid aliceblue;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(167, 211, 248);
+}
+
+.fab i.fa-instagram {
+    color: rgb(221, 42, 123);
+}
+
+.fab i.fa-whatsapp {
+    color: green;
+}
+
+.fab i.fa-linkedin {
+    color: blue;
+}
+
+.fab i.fa-twitter {
+    color: blue;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 28rem;
+    height: 5rem;
+    padding: 1rem 1rem 1rem 3rem;
+    background-color: rgb(221, 221, 221);
+    border: none;
+    border-radius: .8rem;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: rgb(122, 137, 150);
+}
+
+#signup2 {
+    width: 16rem;
+    height: 5rem;
+    background-color: rgb(206, 10, 10);
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    border: .1rem solid lightblue;
+    color: white;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.main.change .background {
+    width: 40%;
+}
+
+.main.change .banner {
+    left: 5rem;
+}
+
+.main.change .signup-form {
+    left: 40rem;
+}
+
+.text {
+    color: rgb(165, 8, 8);
+    width: 60rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 0;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* Excess */
+/* .welcome .background{
+    width: 100%;
+} */
+/* 
+ */
